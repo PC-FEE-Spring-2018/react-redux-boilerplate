@@ -5,10 +5,9 @@
   "author": "Michael Sweeney <jfmike@gmail.com> (https://github.com/overthemike)",
   "license": "MIT",
   "scripts": {
-    "start": "concurrently \"json-server db.json --watch -p 3001\" \"cd client && yarn start\""
+    "start": "concurrently \"cd server && yarn start\" \"cd client && yarn start\""
   },
   "dependencies": {
-    "concurrently": "^3.5.1",
-    "json-server": "^0.12.1"
+    "concurrently": "^3.5.1"
   }
 }
